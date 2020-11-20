@@ -29,6 +29,10 @@ app.use((err, req, res, next) => {
     res.status(status).json({ error: { message: err.message } });
 });
 
+app.get('/', function (req, res) {  
+    res.sendFile(path.join(__dirname, '../react-notes-project/build', 'index.html'));
+});
+
 mongoose.connect(MONGODB, { useNewUrlParser: true })
     .then(() => {
         console.log('connected to mongodb');
