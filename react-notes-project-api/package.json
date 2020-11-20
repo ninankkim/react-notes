@@ -4,8 +4,9 @@
   "description": "REST API for managing personal notes",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd client && npm install && npm run build"
   },
   "author": "PairLearning",
   "license": "ISC",

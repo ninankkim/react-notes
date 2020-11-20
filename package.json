@@ -1,0 +1,22 @@
+{
+  "name": "react-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "cd react-notes-project-api && npm install",
+    "postinstall": "cd react-notes-project && npm install && npm build",
+    "start": "cd react-notes-project-api && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninankkim/react-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ninankkim/react-notes/issues"
+  },
+  "homepage": "https://github.com/ninankkim/react-notes#readme"
+}
